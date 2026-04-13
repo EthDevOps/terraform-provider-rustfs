@@ -1,5 +1,19 @@
 # Terraform Provider Rustfs
 
+> [!NOTE]
+> This is the EthDevOps fork, published to the OpenTofu registry as `EthDevOps/rustfs`.
+>
+> ```hcl
+> terraform {
+>   required_providers {
+>     rustfs = {
+>       source  = "EthDevOps/rustfs"
+>       version = "~> 0.1"
+>     }
+>   }
+> }
+> ```
+
 This provider should take care of rustfs management.
 The issue I needed to solve is a missing functionality of the aws provider on my installation.
 A working solution was: https://github.com/aminueza/terraform-provider-minio for bucket management.
