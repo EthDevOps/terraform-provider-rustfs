@@ -23,7 +23,7 @@ type PolicyStatementSinle struct {
 type Policy struct {
 	Version   string            `json:"Version"`
 	Statement []PolicyStatement `json:"Statement"`
-	Name      string
+	Name      string            `json:"-"`
 }
 
 type statementReply struct {
